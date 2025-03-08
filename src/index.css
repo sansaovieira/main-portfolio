@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@layer base {
+    body {
+      @apply bg-[#1f2235] text-white;
+    }
+  }
+  
