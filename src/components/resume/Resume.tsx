@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import SectionAbout from "../organisms/sectionAbout/SectionAbout";
 import './Resume.css';
 
