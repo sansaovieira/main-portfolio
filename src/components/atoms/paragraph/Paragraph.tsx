@@ -3,14 +3,14 @@ import { useState } from "react";
 interface ParagraphProps {
   text: string;
 }
+
 const Paragraph = ({ text }: ParagraphProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <div>
+    <div className="max-w-full px-4 sm:px-6 lg:px-8">
       <p
-        className={`${
-          isExpanded ? "block" : "line-clamp-3"
-        } transition-all duration-300`}
+        className={`text-base sm:text-lg lg:text-sm ${isExpanded ? "block" : "line-clamp-3"} transition-all duration-300`}
       >
         {text}
       </p>
@@ -25,4 +25,3 @@ const Paragraph = ({ text }: ParagraphProps) => {
 };
 
 export default Paragraph;
-

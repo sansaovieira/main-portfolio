@@ -1,8 +1,32 @@
-[
+{
+  "tableData": [
     { "label": "Name", "value": "Sansão Vieira" },
     { "label": "Age", "value": "27" },
     { "label": "Address", "value": "Manoel Patricio de Menezes, SP" },
     { "label": "Phone Number", "value": "+55 (11) 93905-1373" },
     { "label": "Email", "value": "vieirasansao42@gmail.com" }
+  ],
+  "cardData": [
+    {
+      "title": "Personal Blog Frontend",
+      "description": "This project is the frontend of the Personal Blog, developed in the Bootcamp Generation Brasil. It allows users to create, edit, and view blog posts through an intuitive and interactive interface.",
+      "githubLink": "https://github.com/sansaovieira/frontend-blogpessoal",
+      "imageUrl": "https://ik.imagekit.io/ios4z1d4u/login.png?updatedAt=1741460663426",
+      "category": "frontend"
+    },
+    {
+      "title": "Game Store",
+      "description": "GameZone is an online platform for selling games and accessories, built with Spring Framework. This project provides a robust and scalable structure to meet the needs of gamers and enthusiasts.",
+      "githubLink": "https://github.com/sansaovieira/game-store",
+      "imageUrl": "https://img.freepik.com/free-vector/gradient-gaming-setup-sale-banner_23-2149833252.jpg?semt=ais_hybrid",
+      "category": "backend"
+    },
+    {
+      "title": "Todo List",
+      "description": "This is a to-do list application developed with Angular CLI 19.0.2. It enables users to manage tasks easily, offering functionalities to create, edit, and delete tasks efficiently.",
+      "githubLink": "https://github.com/sansaovieira/todo-list",
+      "imageUrl": "https://github.com/sansaovieira/todo-list/raw/main/public/lista-de-tarefas.PNG",
+      "category": "frontend"
+    }
   ]
-  
+}

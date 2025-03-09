@@ -1,10 +1,28 @@
+import React, { useState, useEffect } from "react";
 import SectionAbout from "../organisms/sectionAbout/SectionAbout";
+import './Resume.css';
+
+const typingWords = ["WELCOME", "BEM-VINDO", "Bienvenido", "BIENVENUE"];
 
 const Resume = () => {
+  const [currentWord, setCurrentWord] = useState(typingWords[0]);
+  const [animationKey, setAnimationKey] = useState(Date.now());
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      index = (index + 1) % typingWords.length;
+      setCurrentWord(typingWords[index]);
+      setAnimationKey(Date.now());
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <SectionAbout
-        title="Welcome!"
+        title={<span className="typing-effect" key={animationKey}>{currentWord}</span>}
         subtitle="I Am Software Analyst"
         text="I am a Systems Analyst focused on developing end-to-end solutions,
 delivering robust and scalable products. My expertise lies in the

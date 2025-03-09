@@ -11,8 +11,8 @@ const Table = ({ title }: TableProps) => {
       </h2>
       <table className="w-full text-left border-collapse">
         <tbody>
-          {data.map((item, index) => (
-            <tr key={index} className="border-b border-gray-700">
+          {data.tableData.map((item, index) => (
+            <tr key={index} className="">
               <td className="py-2 px-4 font-semibold text-gray-300">
                 {item.label} :
               </td>

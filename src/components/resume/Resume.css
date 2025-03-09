@@ -1,0 +1,25 @@
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 4px solid #f84e54;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 1.5s steps(30) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 34%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
